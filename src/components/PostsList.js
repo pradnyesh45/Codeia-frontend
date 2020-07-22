@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import { PostsList } from '.';
 
-class PostList extends Component {
+class PostsList extends Component {
   render() {
     const { posts } = this.props;
     return (
@@ -12,7 +11,7 @@ class PostList extends Component {
             <div className="post-header">
               <div className="post-avatar">
                 <img
-                  src="https://www.flaticon.com/premium-icon/icons/svg/2667/2667378.svg"
+                  src="https://image.flaticon.com/icons/svg/2154/2154651.svg"
                   alt="user-pic"
                 />
                 <div>
@@ -25,11 +24,12 @@ class PostList extends Component {
               <div className="post-actions">
                 <div className="post-like">
                   <img
-                    src="https://image.flaticon.com/icons/svg/833/833300.svg"
+                    src="https://image.flaticon.com/icons/svg/1077/1077035.svg"
                     alt="likes-icon"
                   />
                   <span>{post.likes.length}</span>
                 </div>
+
                 <div className="post-comments-icon">
                   <img
                     src="https://image.flaticon.com/icons/svg/1380/1380338.svg"
@@ -49,6 +49,7 @@ class PostList extends Component {
                     <span className="post-comment-time">a minute ago</span>
                     <span className="post-comment-likes">22</span>
                   </div>
+
                   <div className="post-comment-content">Random comment</div>
                 </div>
               </div>
@@ -64,4 +65,4 @@ PostsList.propTypes = {
   posts: PropTypes.array.isRequired,
 };
 
-export default PostList;
+export default PostsList;
