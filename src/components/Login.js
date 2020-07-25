@@ -19,7 +19,7 @@ class Login extends Component {
     this.setState({ password: e.target.value });
   };
 
-  handleFormSubmit = () => {
+  handleFormSubmit = (e) => {
     e.preventDefault();
     // console.log('this.emailInputRef', this.emailInputRef);
     // console.log('this.passwordInputRef', this.passwordInputRef);
