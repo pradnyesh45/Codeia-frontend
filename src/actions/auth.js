@@ -114,3 +114,9 @@ export function signupSuccessful(user) {
     user,
   };
 }
+
+export function clearAuthState() {
+  return {
+    type: CLEAR_AUTH_STATE,
+  };
+}
